@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard</title>
+        {% include 'KristofvcDashboardBundle::Assets/stylesheets.html.twig' %}
+        {% block extrastyles %}{% endblock extrastyles %}
+
+        {% include 'KristofvcDashboardBundle::Assets/scripts_top.html.twig' %}
+        {% block extrajstop %}{% endblock extrajstop %}
+    </head>
+
+    <body onload="setFocus()">
+        <div class="container">
+            {% for page in pages %}
+                <div class="row">
+                {% for column in page.columns %}
+                    <div class="span{{ column.span }}">
+                        <div class="row">
+                        {% for node in column.nodes %}
+                            {{ node.renderBlock(container) | raw }}
+                        {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+        
+        {% include 'KristofvcDashboardBundle::Assets/scripts_bottom.html.twig' %}
+        {% block extrajsbottom %}{% endblock extrajsbottom %}  
+        <script type="text/javascript">
+            var formInUse = false;
+            function setFocus() {
+                if (!formInUse) {
+                    document.searchform.q.focus();
+                }
+            }
+        </script>    
+    </body>
+
+</html>

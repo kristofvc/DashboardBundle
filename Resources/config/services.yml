@@ -1,0 +1,7 @@
+parameters:
+#    kristofvc_dashboard.example.class: Kristofvc\DashboardBundle\Example
+
+services:
+#    kristofvc_dashboard.example:
+#        class: %kristofvc_dashboard.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

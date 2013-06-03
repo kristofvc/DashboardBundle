@@ -1,0 +1,107 @@
+html, body {
+	background-color: #eee;
+}
+body {
+	padding-top: 80px; 
+}
+.container {
+	padding: 0;
+	width: 320px !important;
+    margin: auto;
+}
+
+/* The white background content wrapper */
+.container .content {
+	background-color: #fff;
+	padding: 20px;
+	margin: 0 -30px; 
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+div#suggestiondiv{
+	background-color: #eee; 
+	z-index: 99; 
+	display: none; 
+	position:absolute;
+	margin: auto;
+	margin-left: 245px;
+	padding-top: 10px; 
+	padding-left: 40px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	margin-top: -65px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.15);
+	box-shadow: 0 2px 4px rgba(0,0,0,.15);
+}
+
+.login-form {
+	margin-left: 55px;
+	margin-top: 20px;
+}
+
+.login-form fieldset .gravatarimage{
+	postion:absolute;
+	margin-top: -60px;
+	margin-left: 75px;
+}
+
+input.span2{
+	width: 192px;
+}
+
+input.username{
+	margin-bottom: 15px;
+}
+
+legend {
+	margin-right: -50px;
+	font-weight: bold;
+	color: #404040;
+}
+
+img{
+	width: 80px;
+	margin: auto;
+	margin-bottom: 12px;    
+}
+
+div.footeraction{
+	margin: 0; 
+	margin-left: -18px;
+	margin-right: -18px;
+	padding: 0; 
+	padding-top: 5px;
+	/*font-weight: bold;*/
+	font-size: 85%
+}
+
+div.submit{
+        padding: 20px;
+/*	border-top: 1px solid #ccc;
+	background-color: #eee;
+	margin: 0;
+	padding: 0;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: -55px;
+	margin-right: -20px;
+	margin-bottom: -40px;
+	height: 30px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;*/
+}
+
+div.submit button{
+	float: right;
+	margin-right: 30px;
+}

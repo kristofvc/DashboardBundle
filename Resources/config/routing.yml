@@ -1,0 +1,3 @@
+kristofvc_dashboard_homepage:
+    pattern:  /
+    defaults: { _controller: KristofvcDashboardBundle:Default:index }
